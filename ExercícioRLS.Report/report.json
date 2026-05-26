@@ -1,0 +1,135 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "717196f05cc03d6c478f",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"9a63f0be1089cd5a5971\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":15.678391959798994,\"z\":1,\"width\":494.4723618090452,\"height\":598.1909547738693,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"amostra_bolsa.Ticket Medio\"},{\"queryRef\":\"amostra_bolsa.Total Beneficiarios\"},{\"queryRef\":\"amostra_bolsa.Total Municipios\"},{\"queryRef\":\"amostra_bolsa.Total Repasses\"},{\"queryRef\":\"amostra_bolsa.UF\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Ticket Medio\"},\"Name\":\"amostra_bolsa.Ticket Medio\",\"NativeReferenceName\":\"Ticket Medio\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Beneficiarios\"},\"Name\":\"amostra_bolsa.Total Beneficiarios\",\"NativeReferenceName\":\"Total Beneficiarios\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Municipios\"},\"Name\":\"amostra_bolsa.Total Municipios\",\"NativeReferenceName\":\"Total Municipios\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"},\"Name\":\"amostra_bolsa.Total Repasses\",\"NativeReferenceName\":\"Total Repasses\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"UF\"},\"Name\":\"amostra_bolsa.UF\",\"NativeReferenceName\":\"UF\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Ticket Medio\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 598.19,
+          "width": 494.47,
+          "x": 0.00,
+          "y": 15.68,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"e081bde0ff2cac9247c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":494.4723618090452,\"y\":334.07035175879395,\"z\":0,\"width\":384.72361809045225,\"height\":279.79899497487435,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_regioes.Regiao\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_regioes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Regiao\"},\"Name\":\"dim_regioes.Regiao\",\"NativeReferenceName\":\"Regiao\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.80,
+          "width": 384.72,
+          "x": 494.47,
+          "y": 334.07,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"fb3d7799b6459031e8f1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":494.4723618090452,\"y\":15.678391959798994,\"z\":2,\"width\":516.180904522613,\"height\":279.79899497487435,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"amostra_bolsa.NOME MUNICÍPIO\",\"active\":true}],\"Y\":[{\"queryRef\":\"amostra_bolsa.Total Repasses\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"NOME MUNICÍPIO\"},\"Name\":\"amostra_bolsa.NOME MUNICÍPIO\",\"NativeReferenceName\":\"NOME MUNICÍPIO\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"},\"Name\":\"amostra_bolsa.Total Repasses\",\"NativeReferenceName\":\"Total Repasses\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.80,
+          "width": 516.18,
+          "x": 494.47,
+          "y": 15.68,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b1595f69e2885f955e1d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"12ec5851300df6b25064\",\"layouts\":[{\"id\":0,\"position\":{\"x\":377.48743718592965,\"y\":0,\"z\":2,\"width\":213.46733668341707,\"height\":218.29145728643215,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"amostra_bolsa.Total Municipios\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Municipios\"},\"Name\":\"amostra_bolsa.Total Municipios\",\"NativeReferenceName\":\"Total Municipios\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Municipios\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 218.29,
+          "width": 213.47,
+          "x": 377.49,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"25adf8872a295f849c64\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.64824120603015,\"y\":218.29145728643215,\"z\":3,\"width\":367.8391959798995,\"height\":218.29145728643215,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"amostra_bolsa.Total Repasses\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"},\"Name\":\"amostra_bolsa.Total Repasses\",\"NativeReferenceName\":\"Total Repasses\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 218.29,
+          "width": 367.84,
+          "x": 9.65,
+          "y": 218.29,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"3923b1cf97ae90ac152d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.4020100502512,\"y\":24.120603015075375,\"z\":4,\"width\":367.8391959798995,\"height\":217.08542713567837,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"amostra_bolsa.Total Repasses\"}],\"Category\":[{\"queryRef\":\"dim_regioes.Regiao\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_regioes\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"},\"Name\":\"amostra_bolsa.Total Repasses\",\"NativeReferenceName\":\"Total Repasses\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Regiao\"},\"Name\":\"dim_regioes.Regiao\",\"NativeReferenceName\":\"Regiao\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Repasses\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 217.09,
+          "width": 367.84,
+          "x": 640.40,
+          "y": 24.12,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"5c57b18be27c6fbb2140\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":459,\"width\":368,\"height\":218,\"z\":5,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"amostra_bolsa.ANO\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(amostra_bolsa.MÊS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ANO\"},\"Name\":\"amostra_bolsa.ANO\",\"NativeReferenceName\":\"ANO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MÊS\"}},\"Function\":5},\"Name\":\"CountNonNull(amostra_bolsa.MÊS)\",\"NativeReferenceName\":\"MÊS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MÊS\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 218.00,
+          "width": 368.00,
+          "x": 10.00,
+          "y": 459.00,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"a7b3354c225474da5d9c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":241,\"width\":368,\"height\":195,\"z\":7,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"amostra_bolsa.ANO\"}],\"Tooltips\":[{\"queryRef\":\"Min(amostra_bolsa.MÊS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ANO\"},\"Name\":\"amostra_bolsa.ANO\",\"NativeReferenceName\":\"ANO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"MÊS\"}},\"Function\":3},\"Name\":\"Min(amostra_bolsa.MÊS)\",\"NativeReferenceName\":\"Primeiro MÊS\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 195.00,
+          "width": 368.00,
+          "x": 640.00,
+          "y": 241.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"c9a9a8f99e1db7491a36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":377.48743718592965,\"y\":218.29145728643215,\"z\":1,\"width\":224.321608040201,\"height\":218.29145728643215,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"amostra_bolsa.Total Beneficiarios\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Beneficiarios\"},\"Name\":\"amostra_bolsa.Total Beneficiarios\",\"NativeReferenceName\":\"Total Beneficiarios\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Beneficiarios\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 218.29,
+          "width": 224.32,
+          "x": 377.49,
+          "y": 218.29,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"e0434da13facf2d68c24\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.64824120603015,\"y\":0,\"z\":0,\"width\":367.8391959798995,\"height\":218.29145728643215,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"amostra_bolsa.Ticket Medio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"amostra_bolsa\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Ticket Medio\"},\"Name\":\"amostra_bolsa.Ticket Medio\",\"NativeReferenceName\":\"Ticket Medio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Ticket Medio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 218.29,
+          "width": 367.84,
+          "x": 9.65,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

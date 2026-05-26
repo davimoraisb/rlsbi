@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "amostra_bolsa",
+          "nodeLineageTag": "d16866c0-c28e-4ade-8a31-d59e2e981bed",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 672,
+            "y": 47
+          },
+          "nodeIndex": "dim_regioes",
+          "nodeLineageTag": "37a886a9-375f-4311-80b4-f2916deecd8c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 294,
+            "y": 293
+          },
+          "nodeIndex": "dim_usuarios_rls",
+          "nodeLineageTag": "b583e548-3cf6-45d3-829f-033fdab89a0d",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

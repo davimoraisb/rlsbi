@@ -1,0 +1,734 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"amostra_bolsa\",\"dim_usuarios_rls\",\"dim_regioes\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "2b04f1fa-d86f-115e-1d85-c225e7b4cf00",
+        "fromColumn": "UF",
+        "fromTable": "amostra_bolsa",
+        "toColumn": "UF",
+        "toTable": "dim_regioes"
+      },
+      {
+        "name": "65f0a116-f78d-51ba-2686-01fb9d533e05",
+        "fromColumn": "Regiao",
+        "fromTable": "dim_regioes",
+        "toColumn": "regiao_permitida",
+        "toTable": "dim_usuarios_rls"
+      }
+    ],
+    "roles": [
+      {
+        "name": "Admin",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "1d48d84b185b4c1e99db3af0bff68615"
+          }
+        ],
+        "modelPermission": "read"
+      },
+      {
+        "name": "Gestor_CentroOeste",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "c1a49c4b132f4249a58a47b46915606d"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_regioes",
+            "filterExpression": "[Regiao] == \"Centro-Oeste\""
+          }
+        ]
+      },
+      {
+        "name": "Gestor_Nordeste",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "9925101aa5d740d3b18990656bec3ac5"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_regioes",
+            "filterExpression": "[Regiao] == \"Nordeste\""
+          }
+        ]
+      },
+      {
+        "name": "Gestor_Norte",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "8b2064539fad4ad4afad4a8ed45f6add"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_regioes",
+            "filterExpression": "[Regiao] == \"Norte\""
+          }
+        ]
+      },
+      {
+        "name": "Gestor_Sudeste",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "1d60e8f2459f449aaf0076d76b58420a"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_regioes",
+            "filterExpression": "[Regiao] == \"Sudeste\""
+          }
+        ]
+      },
+      {
+        "name": "Gestor_Sul",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "e2ea7a78e07a40fca3fd3f29efe07c72"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_regioes",
+            "filterExpression": "[Regiao] == \"Sul\""
+          }
+        ]
+      },
+      {
+        "name": "Gestor_Regional_Dinamico",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "4f1d1ef01c5940b6b3488bc5bb4e4da2"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_usuarios_rls",
+            "filterExpression": "[email_usuario] = USERPRINCIPALNAME()"
+          }
+        ]
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "amostra_bolsa",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          }
+        ],
+        "columns": [
+          {
+            "name": "MÊS COMPETÊNCIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8ffc5946-a1fa-44b4-9c80-6a46686a3430",
+            "sourceColumn": "MÊS COMPETÊNCIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "UF",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f9968aff-db20-45f9-9a8e-35c53fc32014",
+            "sourceColumn": "UF",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CÓDIGO MUNICÍPIO SIAFI",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4cd1eec1-6cbc-413f-b3f9-c98ad5ede02b",
+            "sourceColumn": "CÓDIGO MUNICÍPIO SIAFI",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOME MUNICÍPIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e60a7e44-755b-4cd8-ade4-10198d9b2ffc",
+            "sourceColumn": "NOME MUNICÍPIO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CPF FAVORECIDO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c3a2afd0-39a6-41b0-9dc3-36062d0119f9",
+            "sourceColumn": "CPF FAVORECIDO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NIS FAVORECIDO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4cbed236-9e71-4632-9832-c1d548f8d318",
+            "sourceColumn": "NIS FAVORECIDO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOME FAVORECIDO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7c119a33-3cc3-4bab-a8da-3d7837a01b21",
+            "sourceColumn": "NOME FAVORECIDO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "VALOR PARCELA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "0",
+            "lineageTag": "0e6acb75-d552-4e1f-8742-94e8721161c5",
+            "sourceColumn": "VALOR PARCELA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ANO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "390405cb-d5d9-47f4-a1e9-1062b9c89565",
+            "sourceColumn": "ANO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MÊS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6e38b8d6-4b21-4bf2-9bac-f2def67a9695",
+            "sourceColumn": "MÊS",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d16866c0-c28e-4ade-8a31-d59e2e981bed",
+        "measures": [
+          {
+            "name": "Total Repasses",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "SUM(amostra_bolsa[VALOR PARCELA])",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "aa842e07-52da-4e1d-978a-1b31d21df743"
+          },
+          {
+            "name": "Total Beneficiarios",
+            "expression": "COUNTROWS(amostra_bolsa)",
+            "formatString": "0",
+            "lineageTag": "885bde3c-f8b2-4b50-a34e-060e7d462978"
+          },
+          {
+            "name": "Ticket Medio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "expression": "DIVIDE([Total Repasses], [Total Beneficiarios])",
+            "formatString": "\"R$\"\\ #,0.###############;-\"R$\"\\ #,0.###############;\"R$\"\\ #,0.###############",
+            "lineageTag": "8701e228-3839-4b89-a5e9-effe6aea8963"
+          },
+          {
+            "name": "Total Municipios",
+            "expression": "DISTINCTCOUNT(amostra_bolsa[CÓDIGO MUNICÍPIO SIAFI])",
+            "formatString": "0",
+            "lineageTag": "69487b16-c4f5-4b81-b7c5-3b489cbe124f"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "amostra_bolsa",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\davimorais\\Downloads\\amostra_bolsa.csv\"),[Delimiter=\",\", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"MÊS COMPETÊNCIA\", Int64.Type}, {\"UF\", type text}, {\"CÓDIGO MUNICÍPIO SIAFI\", Int64.Type}, {\"NOME MUNICÍPIO\", type text}, {\"CPF FAVORECIDO\", type text}, {\"NIS FAVORECIDO\", Int64.Type}, {\"NOME FAVORECIDO\", type text}, {\"VALOR PARCELA\", Currency.Type}}),",
+                "    #\"Coluna Duplicada\" = Table.DuplicateColumn(#\"Tipo Alterado\", \"MÊS COMPETÊNCIA\", \"MÊS COMPETÊNCIA - Copiar\"),",
+                "    #\"Coluna Duplicada1\" = Table.DuplicateColumn(#\"Coluna Duplicada\", \"MÊS COMPETÊNCIA\", \"MÊS COMPETÊNCIA - Copiar.1\"),",
+                "    #\"Primeiros caracteres extraídos\" = Table.TransformColumns(#\"Coluna Duplicada1\", {{\"MÊS COMPETÊNCIA - Copiar\", each Text.Start(Text.From(_, \"pt-BR\"), 4), type text}}),",
+                "    #\"Últimos caracteres extraídos\" = Table.TransformColumns(#\"Primeiros caracteres extraídos\", {{\"MÊS COMPETÊNCIA - Copiar.1\", each Text.End(Text.From(_, \"pt-BR\"), 2), type text}}),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Últimos caracteres extraídos\",{{\"MÊS COMPETÊNCIA - Copiar\", \"ANO\"}, {\"MÊS COMPETÊNCIA - Copiar.1\", \"MÊS\"}})",
+                "in",
+                "    #\"Colunas Renomeadas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_f5a4160a-e55d-47db-902f-3df642cd88dc",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d0b06835-a1e0-469d-975a-2865190baef4",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8c18087c-7eba-4ab0-8525-0f38d0d3e87c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "1486f965-8d6c-4747-b0e5-c83f2a450ed6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "26b7f5c1-c4e9-409e-9cdc-8c450e20efd9",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "6caf912f-b448-4c7e-9f8b-5b69c5915c67",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "2589466c-deb5-468e-bb42-c3bc66936786",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "73fc5db8-8284-43b7-a2e5-84da5c2de537",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "adf07016-f60e-4c8a-8466-249c5e17986a",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "b1b6aad7-34e4-4cdb-97f3-e854391f74de",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "09c0636d-2bc8-446e-bcd5-71bf761ea7ad",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "bd91a2f2-b9e5-4e41-927b-51ae9a52d4ce",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "47a3a3ca-3339-44e0-989b-e8d9190cb6dd"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "a3f08926-083c-4329-8838-6aa45e1ac01b",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_f5a4160a-e55d-47db-902f-3df642cd88dc",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_usuarios_rls",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "email_usuario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "028d04a3-c7d9-4ba1-95da-ef484bdd3da4",
+            "sourceColumn": "email_usuario",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "regiao_permitida",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2378283c-8fef-45f1-b112-1a54b928e72e",
+            "sourceColumn": "regiao_permitida",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b583e548-3cf6-45d3-829f-033fdab89a0d",
+        "partitions": [
+          {
+            "name": "dim_usuarios_rls",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(",
+                "        {",
+                "            {\"gestor.norte@ministerio.br\", \"Norte\"},",
+                "            {\"gestor.nordeste@ministerio.br\", \"Nordeste\"},",
+                "            {\"gestor.centroeste@ministerio.br\", \"Centro-Oeste\"},",
+                "            {\"gestor.sudeste@ministerio.br\", \"Sudeste\"},",
+                "            {\"gestor.sul@ministerio.br\", \"Sul\"}",
+                "        },",
+                "        {\"email_usuario\", \"regiao_permitida\"}",
+                "    ),",
+                "    TipoAlterado = Table.TransformColumnTypes(",
+                "        Fonte,",
+                "        {",
+                "            {\"email_usuario\", type text},",
+                "            {\"regiao_permitida\", type text}",
+                "        }",
+                "    )",
+                "in",
+                "    TipoAlterado"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_regioes",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Regiao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "255e2c4a-0d75-402d-ae9d-3d9f76f7e233",
+            "sourceColumn": "Regiao",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UF",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f18170ea-5caf-41e9-844f-c97c948df028",
+            "sourceColumn": "UF",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "37a886a9-375f-4311-80b4-f2916deecd8c",
+        "partitions": [
+          {
+            "name": "dim_regioes",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(",
+                "        {",
+                "            {\"Norte\", \"AC\"}, {\"Norte\", \"AM\"}, {\"Norte\", \"AP\"}, {\"Norte\", \"PA\"}, {\"Norte\", \"RO\"}, {\"Norte\", \"RR\"}, {\"Norte\", \"TO\"},",
+                "            {\"Nordeste\", \"AL\"}, {\"Nordeste\", \"BA\"}, {\"Nordeste\", \"CE\"}, {\"Nordeste\", \"MA\"}, {\"Nordeste\", \"PB\"}, {\"Nordeste\", \"PE\"}, {\"Nordeste\", \"PI\"}, {\"Nordeste\", \"RN\"}, {\"Nordeste\", \"SE\"},",
+                "            {\"Centro-Oeste\", \"DF\"}, {\"Centro-Oeste\", \"GO\"}, {\"Centro-Oeste\", \"MS\"}, {\"Centro-Oeste\", \"MT\"},",
+                "            {\"Sudeste\", \"ES\"}, {\"Sudeste\", \"MG\"}, {\"Sudeste\", \"RJ\"}, {\"Sudeste\", \"SP\"},",
+                "            {\"Sul\", \"PR\"}, {\"Sul\", \"RS\"}, {\"Sul\", \"SC\"}",
+                "        },",
+                "        {\"Regiao\", \"UF\"}",
+                "    ),",
+                "    TipoAlterado = Table.TransformColumnTypes(",
+                "        Fonte,",
+                "        {",
+                "            {\"Regiao\", type text},",
+                "            {\"UF\", type text}",
+                "        }",
+                "    )",
+                "in",
+                "    TipoAlterado"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
